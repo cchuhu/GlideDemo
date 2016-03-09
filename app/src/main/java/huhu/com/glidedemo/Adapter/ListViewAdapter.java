@@ -46,9 +46,14 @@ public class ListViewAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         if (view == null) {
-            view = inflater.inflate(R.layout.list_item, viewGroup,false);
+            view = inflater.inflate(R.layout.list_item, viewGroup, false);
         }
-        Glide.with(mContext).load(mList[i]).into((ImageView) view);
+        /*placeholder设置占位符。
+        * crossFade设置淡入淡出动画，默认调用，也可以重载设置时间长度
+        * 调用dontAnimate可以删除淡入淡出效果
+        * .error可以设置图片出错时的默认图片，必须是已经初始化或者mipmap中的图片对象*/
+
+        Glide.with(mContext).load(mList[i]).placeholder(R.mipmap.load).crossFade(2000).into((ImageView) view);
         return view;
     }
 
