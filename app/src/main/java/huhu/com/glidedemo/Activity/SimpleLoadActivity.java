@@ -1,10 +1,12 @@
-package huhu.com.glidedemo;
+package huhu.com.glidedemo.Activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+
+import huhu.com.glidedemo.R;
 
 /**
  * 简单使用Glide库加载图片测试
