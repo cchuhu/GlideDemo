@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fc9d9a"
+    android:orientation="horizontal"
+    tools:context="huhu.com.glidedemo.Activity.TargetActivity">
+
+    <ImageView
+        android:id="@+id/targetImageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <huhu.com.glidedemo.MyView
+        android:id="@+id/mView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#efefef"></huhu.com.glidedemo.MyView>
+
+</LinearLayout>
